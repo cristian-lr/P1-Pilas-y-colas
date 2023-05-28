@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Cajero cajero = new Cajero();
+        Cajero cajero = new Cajero(2);
         Scanner scanner = new Scanner(System.in);
         boolean salir = false;
         int opcion;

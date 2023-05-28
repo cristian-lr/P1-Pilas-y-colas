@@ -6,11 +6,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Cajero {
+    private int id;
     private String nombre;
     private Queue<Cliente> cola;
 
-    public Cajero() {
-
+    public Cajero(int id) {
+        this.id=id;
     }
 
     public String getNombre() {
@@ -57,6 +58,7 @@ public class Cajero {
     }
 
     public void verClientesPendientes() {
+        System.out.println("Id del cajero: "+id);
         System.out.println("Clientes pendientes: ");
         for (Cliente cliente: cola) {
             System.out.println(cliente);
